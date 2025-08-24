@@ -1,18 +1,9 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
+import { testimonials } from "../constants";
 
-const testimonials = [
-  {
-    text: `"We absolutely love our custom kitchen cabinets! The 3D tool helped us pick the perfect walnut finish, and the craftsmanship is stunning. The team was professional and made the process so easy. Highly recommend!"`,
-  },
-  {
-    text: `"The custom bookshelf fits perfectly in our living room. The attention to detail is amazing. We will definitely order again!"`,
-  },
-  {
-    text: `"Fantastic experience from start to finish. The team listened to our ideas and delivered exactly what we wanted. Thank you!"`,
-  },
-];
+
 
 const Carousel = () => {
   const [[index, direction], setIndex] = useState([0, 0]);

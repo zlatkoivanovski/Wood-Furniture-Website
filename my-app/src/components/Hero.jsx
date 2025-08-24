@@ -1,26 +1,23 @@
-import React, { useRef } from "react";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import React from "react";
 import { Kitchen } from "./models/Modern_kitchen";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Link } from "react-router-dom";
-import KitcherImage from "../../public/images/Spacious-Kitchen.png";
 import tvSand from "../../public/images/tvstand1_1.jpg";
 import Carousel from "./Carousel";
 
 const Hero = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+
   return (
     <div className="flex flex-col gap-0">
       <div className="bg-customGray text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-[15vw] py-12 md:py-40">
         <div className="w-full md:w-1/2 mb-8 md:mb-0 flex flex-col justify-center items-center md:items-start text-center md:text-left font-poppins">
-          <motion.h1 className="font-semibold text-3xl md:text-6xl mb-6 md:mb-10 leading-tight">
+          <h1 className="font-semibold text-3xl md:text-6xl mb-6 md:mb-10 leading-tight">
             Craft Your <br /> Dream Space
-          </motion.h1>
+          </h1>
 
-          <motion.p>
+          <p>
             Discover handcrafted wooden shelves, kitchen cabinets, and closets
             <br className="hidden md:block" />
             tailored to your style. Explore our portfolio, customize your
@@ -29,7 +26,7 @@ const Hero = () => {
             <br className="hidden md:block" />
             with our expert craftsmanship. Start designing today!
             <br className="hidden md:block" />
-          </motion.p>
+          </p>
         </div>
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <img
