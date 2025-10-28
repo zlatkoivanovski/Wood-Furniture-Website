@@ -5,7 +5,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { NavBar, Hero, Footer, CardDetail } from "./components";
-import { Gallery, Customization, Contact } from "./pages";
+import { Gallery, Customization, Contact,Decors } from "./pages";
 import GalleryCardDetails from "./components/gallery/GalleryCardDetails";
 
 const Layout = () => {
@@ -23,6 +23,7 @@ const Layout = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/gallery/:id" element={<GalleryCardDetails />} />
         <Route path="/customization" element={<Customization />} />
+        <Route path="/decors" element={<Decors/>}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/card/:id" element={<CardDetail />} />
       </Routes>

@@ -27,6 +27,11 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
+            <Link to="/decors" className="hover:text-customYellow">
+              Decors
+            </Link>
+          </li>
+          <li>
             <Link to="/contact" className="hover:text-customYellow">
               Contact
             </Link>
